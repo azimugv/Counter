@@ -21,5 +21,14 @@
       <button onclick="" id="plus-btn" class="btn btn-primary">+</button>
       <button id="minus-btn" class="btn btn-success">-</button>
     </div>
+    <script>
+      let count = 0;
+      document
+        .getElementById("plus-btn")
+        .addEventListener("click", function () {
+          count += 1;
+          document.getElementById("count").innerText = count;
+        });
+    </script>
   </body>
 </html>
